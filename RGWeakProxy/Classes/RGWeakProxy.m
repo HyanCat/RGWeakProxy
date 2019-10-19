@@ -25,6 +25,7 @@ RGWeakProxy *RG_WeakProxy(id target)
 {
     RGWeakProxy *proxy = [RGWeakProxy alloc];
     proxy.target = target;
+    return proxy;
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector
